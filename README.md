@@ -3,7 +3,7 @@
 About the code:
 
 GameManager Script:
-- in charge of game stats score & high score. 
+- in charge of game stats, score & high score. 
 
 PlayerMovement Script:
 - in charge of player movement and mouse behaviour.
