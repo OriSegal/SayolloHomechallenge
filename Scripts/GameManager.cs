@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
         
     }
 
-    public void RasieScore(int ScoreToRaise)
+    public void RasieScore(int ScoreToRaise)//call this function when collide with fruit to raise score
     {
         Score += ScoreToRaise;
     }
@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0;
     }
 
-    void GetHighScore()
+    void GetHighScore()//check if there is data saved on the computer
     {
         if (PlayerPrefs.HasKey("HighScore"))
         {
@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void SetHighScore()
+    void SetHighScore()//save high score data on the computer
     {
         if(Score > HighScore)
         {

@@ -13,7 +13,7 @@ public class EnemySpwaner : MonoBehaviour
         SpwanEnemy();
     }
 
-    void SpwanEnemy()
+    void SpwanEnemy()//In charge to spwan enemys and in random locations
     {
         TimeToSpwan = Random.Range(3f, 7f);
         RandomY = Random.Range(-4f, 4f);

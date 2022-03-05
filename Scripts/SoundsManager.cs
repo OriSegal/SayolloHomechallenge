@@ -4,14 +4,7 @@ using UnityEngine;
 
 public class SoundsManager : MonoBehaviour
 {
-
-
     public AudioSource[] Sounds;
-
-    void Start()
-    {
-        
-    }
 
     public void PlayJetSound()
     {

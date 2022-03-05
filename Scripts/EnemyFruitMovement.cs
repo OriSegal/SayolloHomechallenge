@@ -17,7 +17,7 @@ public class EnemyFruitMovement : MonoBehaviour
         Movement();
     }
 
-    void Movement()
+    void Movement()//moveing fruits and enemys to the left 
     {
         rigidbody2D.velocity = new Vector2(Speed, 0);
     }

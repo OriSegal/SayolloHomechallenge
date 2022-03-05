@@ -19,7 +19,7 @@ public class PlayerEngine : MonoBehaviour
         
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)//In charge of behavior when collide with different objects
     {
         if(collision.gameObject.tag == "Fruit")
         {

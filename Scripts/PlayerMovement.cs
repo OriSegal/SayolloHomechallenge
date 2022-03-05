@@ -17,17 +17,17 @@ public class PlayerMovement : MonoBehaviour
         isFlying = false;
     }
 
-    void Update()
+    void Update()//check every frame mouse pressed
     {
         MouseButton();     
     }
 
-    private void LateUpdate()
+    void LateUpdate()//move the object after checking mouse pressed give better result
     {
         Fly();
     }
 
-    void MouseButton()
+    void MouseButton()//In charge of the mouse press
     {
         if (Input.GetMouseButtonDown(0))
         {
@@ -42,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    void Fly()
+    void Fly()//In charge of the movement
     {
         if (isFlying)
         {

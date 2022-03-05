@@ -19,7 +19,7 @@ public class UIManager : MonoBehaviour
     }
 
 
-    void Update()
+    void Update()//update score to texts in the end game panle 
     {
         Score.text = "Score: " + gameManager.Score.ToString();
         HighScore.text = "HighScore: " + gameManager.HighScore.ToString();

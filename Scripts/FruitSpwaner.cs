@@ -13,7 +13,7 @@ public class FruitSpwaner : MonoBehaviour
         SpwanFruit();
     }
 
-    void SpwanFruit()
+    void SpwanFruit()//In charge to spwan Fruits and in random locations
     {
         TimeToSpwan = Random.Range(6f, 10f);
         RandomY = Random.Range(-4f, 4f);
