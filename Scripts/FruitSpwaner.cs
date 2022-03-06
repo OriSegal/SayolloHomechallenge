@@ -17,7 +17,7 @@ public class FruitSpwaner : MonoBehaviour
     {
         TimeToSpwan = Random.Range(6f, 10f);
         RandomY = Random.Range(-4f, 4f);
-        Instantiate(Fruit, new Vector2(12, RandomY), Quaternion.identity);
+        Instantiate(Fruit, new Vector2(18, RandomY), Quaternion.identity);
         Invoke("SpwanFruit", TimeToSpwan);
     }
 }

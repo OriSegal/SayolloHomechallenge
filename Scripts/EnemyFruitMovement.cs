@@ -15,10 +15,19 @@ public class EnemyFruitMovement : MonoBehaviour
     void FixedUpdate()
     {
         Movement();
+        DestroyObjectWhenOutOfView();
     }
 
     void Movement()//moveing fruits and enemys to the left 
     {
         rigidbody2D.velocity = new Vector2(Speed, 0);
+    }
+
+    void DestroyObjectWhenOutOfView()
+    {
+        if (transform.position.x < -16)
+        {
+            Destroy(gameObject);
+        }
     }
 }

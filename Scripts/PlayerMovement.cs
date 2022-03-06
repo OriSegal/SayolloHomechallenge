@@ -8,7 +8,8 @@ public class PlayerMovement : MonoBehaviour
     SoundsManager soundsManager;
 
     public GameObject FireEffect;
-    bool isFlying;
+    [HideInInspector]
+    public bool isFlying;
 
     void Start()
     {
@@ -46,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isFlying)
         {
-            rigidbody2D.velocity = new Vector2(0, 4);
+            rigidbody2D.velocity = new Vector2(0, 5);
             FireEffect.SetActive(true);
         }
         else

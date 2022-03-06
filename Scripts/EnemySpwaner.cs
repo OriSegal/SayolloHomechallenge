@@ -17,7 +17,7 @@ public class EnemySpwaner : MonoBehaviour
     {
         TimeToSpwan = Random.Range(3f, 7f);
         RandomY = Random.Range(-4f, 4f);
-        Instantiate(Enemy, new Vector2(12, RandomY), Quaternion.identity);
+        Instantiate(Enemy, new Vector2(18, RandomY), Quaternion.identity);
         Invoke("SpwanEnemy", TimeToSpwan);
     }
 }
